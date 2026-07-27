@@ -997,8 +997,8 @@
     font-weight: 700;
   }
 
-  /* ---------- Why Findlay band ---------- */
-  .findlay-band {
+  /* ---------- Why-us band ---------- */
+  .why-band {
     background: var(--ink);
     color: var(--white);
     margin: 56px 0 0;
@@ -1007,22 +1007,22 @@
     position: relative;
     overflow: hidden;
   }
-  .findlay-band::before {
+  .why-band::before {
     content: "";
     position: absolute; right: -10%; top: -30%;
     width: 60%; aspect-ratio: 1;
     background: radial-gradient(circle at center, rgba(25,113,212,.4), rgba(25,113,212,0) 60%);
     pointer-events: none;
   }
-  .findlay-band .wrap { position: relative; }
-  .findlay-band .eyebrow { color: #6db3ff; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 24px; font-weight: 600; }
-  .findlay-band h2 {
+  .why-band .wrap { position: relative; }
+  .why-band .eyebrow { color: #6db3ff; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 24px; font-weight: 600; }
+  .why-band h2 {
     font-family: var(--display); font-weight: 700;
     font-size: clamp(34px, 4.4vw, 54px); line-height: 1.05; letter-spacing: -0.025em;
     margin: 0 0 20px; max-width: 720px; text-wrap: balance;
   }
-  .findlay-band h2 em { font-style: normal; color: #9cc8ff; font-weight: 700; }
-  .findlay-band .band-deck {
+  .why-band h2 em { font-style: normal; color: #9cc8ff; font-weight: 700; }
+  .why-band .band-deck {
     font-family: var(--display);
     font-weight: 400;
     font-size: 19px;
@@ -1049,16 +1049,16 @@
   .trust-grid .item .num small { font-size: 22px; color: #9cc8ff; }
   .trust-grid .item .lbl { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 16px; line-height: 1.55; }
 
-  .findlay-extras {
+  .why-extras {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 48px;
     margin-top: 56px;
   }
-  .findlay-extras h5 { font-family: var(--display); font-size: 20px; font-weight: 500; margin: 0 0 20px; color: var(--white); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
-  .findlay-extras p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
-  .findlay-extras p:last-child { margin-bottom: 0; }
-  .findlay-extras strong { color: var(--white); font-weight: 600; }
+  .why-extras h5 { font-family: var(--display); font-size: 20px; font-weight: 500; margin: 0 0 20px; color: var(--white); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
+  .why-extras p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
+  .why-extras p:last-child { margin-bottom: 0; }
+  .why-extras strong { color: var(--white); font-weight: 600; }
 
   /* ---------- FAQ accordion ---------- */
   .faq { margin: 28px 0; }
@@ -1236,7 +1236,7 @@
     .trust-grid .item:nth-child(2) { padding-left: 24px !important; border-right: none; }
     .trust-grid .item:nth-child(3) { padding-left: 0 !important; border-bottom: none; }
     .trust-grid .item:nth-child(4) { padding-left: 24px !important; border-right: none; border-bottom: none; }
-    .findlay-extras { gap: 36px; }
+    .why-extras { gap: 36px; }
     .cross-table { overflow-x: auto; }
     .cross-table table { min-width: 720px; }
   }
@@ -1254,10 +1254,10 @@
     .trims { grid-template-columns: 1fr; border: none; }
     .trim { border-right: none !important; border-bottom: 1px solid var(--rule) !important; padding: 28px 0; }
     .trim:last-child { border-bottom: none !important; }
-    .findlay-extras { grid-template-columns: 1fr; gap: 36px; }
-    .findlay-band { padding: 48px 0 40px; }
-    .findlay-band h2 { font-size: 32px; }
-    .findlay-band .band-deck { font-size: 17px; }
+    .why-extras { grid-template-columns: 1fr; gap: 36px; }
+    .why-band { padding: 48px 0 40px; }
+    .why-band h2 { font-size: 32px; }
+    .why-band .band-deck { font-size: 17px; }
     .trust-grid { grid-template-columns: 1fr 1fr; padding-top: 36px; margin-top: 44px; }
     .trust-grid .item { padding: 20px 16px 20px 0 !important; }
     .trust-grid .item:nth-child(2) { padding-left: 16px !important; }
@@ -1289,8 +1289,8 @@
   /* ---------- Tel links ---------- */
   a.tel { color: inherit; text-decoration: none; }
   a.tel:hover { color: var(--blue); }
-  .findlay-band a.tel { color: inherit; }
-  .findlay-band a.tel:hover { color: #9cc8ff; }
+  .why-band a.tel { color: inherit; }
+  .why-band a.tel:hover { color: #9cc8ff; }
 
   /* ---------- Accessibility ---------- */
   .visually-hidden {
@@ -1326,7 +1326,7 @@
       width: 100% !important;
     }
     /* Specific known-problematic components - force them to behave */
-    .findlay-band, .closing-cta, .findlay-band .wrap, .closing-cta .wrap {
+    .why-band, .closing-cta, .why-band .wrap, .closing-cta .wrap {
       max-width: 100% !important;
     }
     /* Trim cards must be single-column on mobile and respect parent width */
@@ -1499,14 +1499,14 @@
     <nav class="toc" aria-label="Table of contents">
       <h4>In this guide</h4>
       <ol>
-        <li><a href="#delivery-four">Lease or finance your Outback</a></li>
-        <li><a href="#whats-new">Current Outback lease offers</a></li>
-        <li><a href="#charging-levels">A walk through the lineup</a></li>
-        <li><a href="#mojave-summers">Lease vs. finance: the numbers</a></li>
-        <li><a href="#range-heat">Title, registration &amp; fine print</a></li>
-        <li><a href="#public-charging">How the process works</a></li>
-        <li><a href="#tax-credit">What buyers get wrong at lease-end</a></li>
-        <li><a href="#shop-findlay">Why lease or finance here</a></li>
+        <li><a href="#overview">Lease or finance your Outback</a></li>
+        <li><a href="#current-offers">Current Outback lease offers</a></li>
+        <li><a href="#lineup">A walk through the lineup</a></li>
+        <li><a href="#lease-vs-finance">Lease vs. finance: the numbers</a></li>
+        <li><a href="#fine-print">Title, registration &amp; fine print</a></li>
+        <li><a href="#how-it-works">How the process works</a></li>
+        <li><a href="#lease-end">What buyers get wrong at lease-end</a></li>
+        <li><a href="#why-here">Why lease or finance here</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#sources">References</a></li>
       </ol>
@@ -1516,7 +1516,7 @@
     <div class="body">
 
       <!-- §01 Lease or finance your Subaru Outback -->
-      <section class="s" id="delivery-four">
+      <section class="s" id="overview">
         <div class="section-num"><span>01</span><span>From the finance desk</span></div>
         <h2 class="section-h">Lease or finance <em>your Subaru Outback</em>.</h2>
         <p class="lede">The Subaru Outback is the all-wheel-drive wagon that built the category, standard Symmetrical All-Wheel Drive on every trim, 8.7 inches of ground clearance on the standard models, and a cargo hold that swallows a road bike with the front wheel still on. The question for most shoppers isn't whether to get one. It's how to pay for it.</p>
@@ -1531,7 +1531,7 @@
           <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
             <img src="dalton-lot-national-city.jpg" alt="A Subaru on the lot at Dalton Subaru National City, with the dealership building and palms behind it" loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
           </div>
-          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">Our lot on the National City Mile of Cars, where the lease actually gets structured. Standard Symmetrical All-Wheel Drive comes on every Outback, and the trim you pick sets the residual that drives your monthly payment.</figcaption>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">Our lot on the National City Mile of Cars, where the lease gets structured. Standard Symmetrical All-Wheel Drive comes on every Outback, and the trim you pick sets the residual that drives your monthly payment.</figcaption>
         </figure>
 
         <h3>Financing an Outback</h3>
@@ -1547,11 +1547,11 @@
       </section>
 
       <!-- §02 Current Subaru Outback lease offers -->
-      <section class="s" id="whats-new">
+      <section class="s" id="current-offers">
         <div class="section-num"><span>02</span><span>Today's offers</span></div>
         <h2 class="section-h">Current Subaru Outback <em>lease offers</em>.</h2>
         <p class="lede">Lease and finance offers on the Outback change frequently. They shift with the model year, the inventory on the ground, and Subaru of America's national programs, which reset roughly month to month. Posting a fixed monthly payment here would be wrong by the time you read it, so we don't.</p>
-        <p>For the current Subaru Outback lease offers, the monthly payment, the due-at-signing amount, the term length, and the mileage allowance on the trims actually in stock, check the live offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or reach the sales team through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
+        <p>For the current Subaru Outback lease offers, the monthly payment, the due-at-signing amount, the term length, and the mileage allowance on the trims in stock, check the live offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or reach the sales team through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
 
         <h3>Come ready with three things</h3>
         <p>When you reach out, bring these and the quote goes faster:</p>
@@ -1572,7 +1572,7 @@
       </section>
 
       <!-- §03 A quick walk through the Outback lineup -->
-      <section class="s" id="charging-levels">
+      <section class="s" id="lineup">
         <div class="section-num"><span>03</span><span>The lineup</span></div>
         <h2 class="section-h">A quick walk through <em>the Outback lineup</em>.</h2>
 
@@ -1603,7 +1603,7 @@
           <article class="trim">
             <div class="engine-row"><span class="engine">Loaded</span><span class="badge">Strong residual</span></div>
             <h4 class="name">Outback Touring</h4>
-            <p class="equip"><strong>The loaded trim.</strong> Nappa leather, the works. Strong residuals here can actually make the monthly lease gap to a Limited smaller than buyers expect, worth asking us to run.</p>
+            <p class="equip"><strong>The loaded trim.</strong> Nappa leather, the works. Strong residuals here can make the monthly lease gap to a Limited smaller than buyers expect, worth asking us to run.</p>
           </article>
           <article class="trim wilderness">
             <div class="engine-row"><span class="engine">9.5&quot; clr</span><span class="badge">Off-pavement</span></div>
@@ -1629,10 +1629,10 @@
         </div>
       </section>
 
-      <!-- §04 Lease vs. finance: how the numbers actually differ -->
-      <section class="s" id="mojave-summers">
+      <!-- §04 Lease vs. finance: how the numbers differ -->
+      <section class="s" id="lease-vs-finance">
         <div class="section-num"><span>04</span><span>The math</span></div>
-        <h2 class="section-h">Lease vs. finance: <em>how the numbers actually differ</em>.</h2>
+        <h2 class="section-h">Lease vs. finance: <em>how the numbers differ</em>.</h2>
         <p class="lede">A lot of shoppers walk in fixed on one path before they've seen what the other one costs. Here's the framework we use at the desk to make it concrete, without quoting a payment that'll be stale next week.</p>
 
         <!-- Desktop: lease vs finance comparison table -->
@@ -1720,7 +1720,7 @@
         <p>A <strong>finance payment</strong> is built on the full price, your down payment, the loan term, and the APR. You're buying the whole vehicle, so the monthly is higher, but every payment buys equity, and you own an asset at the end. For resale and trade-in context, independent valuation sources like Kelley Blue Book (<a href="https://www.kbb.com" rel="noopener">kbb.com</a>) and Edmunds (<a href="https://www.edmunds.com" rel="noopener">edmunds.com</a>) publish Outback residual and resale data you can sanity-check our finance math against. We encourage it, a customer who's checked KBB before they sit down is a customer we can close honestly and fast.</p>
 
         <blockquote class="pull">
-          The practical rule: keep it five-plus years and drive real miles, finance. Want the newest tech every few years and your mileage is genuinely under the cap, lease. Everyone in the middle should let us run both.
+          The practical rule: keep it five-plus years and drive real miles, finance. Want the newest tech every few years and your mileage is under the cap, lease. Everyone in the middle should let us run both.
         </blockquote>
       </section>
 
@@ -1743,7 +1743,7 @@
       </aside>
 
       <!-- §05 On-the-lot realities: title, registration, and the fine print -->
-      <section class="s" id="range-heat">
+      <section class="s" id="fine-print">
         <div class="section-num"><span>05</span><span>The fine print</span></div>
         <h2 class="section-h">Title, registration, and <em>the fine print</em>.</h2>
         <p class="lede">California adds line items that out-of-state shoppers don't always expect, so we lay them out before you sign. We walk every customer through their specific numbers; we don't bury them.</p>
@@ -1758,7 +1758,7 @@
       </section>
 
       <!-- §06 How the Outback lease & finance process works -->
-      <section class="s" id="public-charging">
+      <section class="s" id="how-it-works">
         <div class="section-num"><span>06</span><span>The process</span></div>
         <h2 class="section-h">How the Outback lease &amp; finance <em>process works</em>.</h2>
         <p class="lede">Getting from "Subaru Outback lease offers" to driving one off the Mile of Cars is straightforward. Here's what it looks like end to end.</p>
@@ -1780,7 +1780,7 @@
       </section>
 
       <!-- §07 What most buyers get wrong about lease-end -->
-      <section class="s" id="tax-credit">
+      <section class="s" id="lease-end">
         <div class="section-num"><span>07</span><span>Lease-end</span></div>
         <h2 class="section-h">What most buyers get wrong <em>about lease-end</em>.</h2>
         <p class="lede">The single biggest surprise at turn-in is wear-and-tear and mileage charges, and it's avoidable. A Subaru lease holds you to a mileage cap and a normal-wear standard. We've had customers roll in 4,000 miles over and owe real money, money that, in hindsight, a finance deal would have spared them entirely.</p>
@@ -1791,13 +1791,13 @@
         <h3>Handle the small stuff during the term</h3>
         <p>If you do lease, take care of the small dings during the term, not at the end, when the lease-return inspector prices them. A scuff fixed early costs a fraction of what it does on the turn-in sheet.</p>
 
-        <p>The flip side: leasing genuinely wins for low-mileage drivers who like staying current on safety tech, and for business use where the structure can make sense, talk to your own tax advisor on that, not us. We're not anti-lease. We're anti-surprise.</p>
+        <p>The flip side: leasing wins for low-mileage drivers who like staying current on safety tech, and for business use where the structure can make sense, talk to your own tax advisor on that, not us. We're not anti-lease. We're anti-surprise.</p>
 
         <p style="font-size:12px; color:var(--muted); letter-spacing:0.02em; line-height:1.6; border-top:1px solid var(--rule-soft); padding-top:18px; margin-top:24px;"><strong style="color:var(--ink-soft); letter-spacing:0.1em; text-transform:uppercase; font-size:10px;">Verify ·</strong> Before you sign a lease, bring an honest annual-mileage figure and we'll match it to the right allowance, or recommend financing if the math says so. Reach us through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener"><strong>Dalton Subaru Contact</strong></a> portal to run both.</p>
       </section>
 
       <!-- §08 Why lease or finance at Dalton Subaru National City -->
-      <section class="s" id="shop-findlay">
+      <section class="s" id="why-here">
         <div class="section-num"><span>08</span><span>Why Dalton</span></div>
         <h2 class="section-h">Why lease or finance at <em>Dalton Subaru National City</em>.</h2>
         <p class="lede">Where you sign matters as much as what you sign. Dalton Subaru National City is an established Subaru dealership staffed by the same team that served San Diego County drivers under the former Frank Subaru name, now operating as Dalton Subaru as part of the Dalton Corporation.</p>
@@ -1857,10 +1857,10 @@
 </main>
 
 <!-- Why us full-bleed band -->
-<section class="findlay-band">
+<section class="why-band">
   <div class="wrap">
     <div class="eyebrow">Dalton Subaru National City</div>
-    <h2>Deep roots on the <em>Mile of Cars</em>.</h2>
+    <h2>Who you're signing the lease <em>with</em>.</h2>
     <p class="band-deck">The same store local owners knew as Frank Subaru, now operating as Dalton Subaru National City under the Dalton Corporation: same people, same finance desk, same showroom. We serve National City, Chula Vista, and the wider San Diego County area.</p>
 
     <div class="trust-grid">
@@ -1882,7 +1882,7 @@
       </div>
     </div>
 
-    <div class="findlay-extras">
+    <div class="why-extras">
       <div>
         <h5>The finance desk</h5>
         <p>We work both sides every day. Tell us your trim, your annual mileage, and your timeline, and we'll run lease and finance side by side and print both quotes, total cost, not just the monthly.</p>
