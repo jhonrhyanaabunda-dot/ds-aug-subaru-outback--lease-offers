@@ -830,6 +830,29 @@
     z-index: 2;
   }
 
+  /* ---------- July-template: intro box ---------- */
+  p.tldr { font-family: var(--display); font-size: 17px; font-weight: 600; line-height: 1.5; color: var(--blue-deep); background: var(--blue-soft); border-left: 3px solid var(--blue); padding: 14px 18px; margin: 0 0 28px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+  p.tldr::before { content: ""; display: none; }
+
+  /* ---------- July-template: sidebar rail ---------- */
+  .rail-action { display:block;text-decoration:none;color:#fff;background:var(--blue);border-radius:var(--radius-md,14px);padding:20px;margin-bottom:16px;transition:background .15s ease;max-width:240px;width:100%;min-width:0;margin-left:auto;margin-right:auto;overflow-wrap:break-word; }
+  .rail-action:hover { background:var(--blue-deep) }
+  .rail-action .lbl { font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);display:block;margin-bottom:8px }
+  .rail-action strong { font-family:var(--display);font-size:21px;font-weight:600;line-height:1.2;color:#fff;display:block }
+  .rail-action .sub { font-size:13px;line-height:1.5;color:rgba(255,255,255,.85);display:block;margin-top:8px }
+  .rail-action .rail-action__cta { display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff }
+  .rail-card { border:1px solid var(--rule);border-radius:var(--radius-md,14px);background:var(--white,#fff);padding:18px;margin-bottom:16px;max-width:240px;width:100%;min-width:0;margin-left:auto;margin-right:auto;overflow-wrap:break-word; }
+  .rail-card .lbl { font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px }
+  .rail-card strong { font-family:var(--display);font-size:18px;font-weight:600;line-height:1.2;color:var(--ink);display:block }
+  .rail-card .sub { font-size:13px;line-height:1.5;color:var(--muted);display:block;margin-top:4px }
+  .rail-card .rail-link { display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--blue);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s ease }
+  .rail-card .rail-link:hover { border-bottom-color:var(--blue) }
+
+  /* ---------- Grid overflow guard ---------- */
+  .article-grid > .body { width: 100%; max-width: 720px; min-width: 0; }
+  .article-grid > .body > * { min-width: 0; max-width: 100%; }
+  .article-grid > .gutter { min-width: 0; }
+
   /* ---------- Cross-shop comparison table ---------- */
   .cross-table {
     margin: 32px 0;
@@ -1130,9 +1153,7 @@
     margin-bottom: 18px;
     display: flex; align-items: center; gap: 10px;
   }
-  .cta-inline .eyebrow::before {
-    content: ""; width: 28px; height: 1px; background: #9cc8ff;
-  }
+  .cta-inline .eyebrow::before { content: none; }
   .cta-inline h3 {
     font-family: var(--display); font-size: clamp(32px, 3.4vw, 44px);
     font-weight: 700; margin: 0 0 14px; color: var(--white);
@@ -1449,6 +1470,11 @@
     height: 100%; border: 0; }
   .yt-embed figcaption { margin-top: 10px; font-size: 13px; line-height: 1.5;
     color: var(--muted); max-width: 70ch; }
+
+  /* ---------- Lease vs finance table: blue header band ---------- */
+  .cross-table thead th { background: var(--blue); color: rgba(255,255,255,.82); border-bottom: none; }
+  .cross-table thead th .model { color: var(--white); }
+  .cross-table thead th .style { color: rgba(255,255,255,.78); }
 </style>
 </head>
 <body>
@@ -1471,7 +1497,6 @@
 
     <div class="hero-cta">
       <a class="primary" href="https://www.subarudalton.com/">See current Outback offers <span class="arrow">&rarr;</span></a>
-      <a class="secondary" href="tel:+16198600064">Call 619-860-0064</a>
     </div>
   </div>
 
@@ -1527,7 +1552,7 @@
       <section class="s" id="overview">
         <div class="section-num"><span>01</span><span>From the finance desk</span></div>
         <h2 class="section-h">Lease or finance <em>your Subaru Outback</em>.</h2>
-        <p class="lede no-cap">The Subaru Outback is the all-wheel-drive wagon that defined its category. All-Wheel Drive is equipped on every trim, with 8.7 inches of ground clearance on the standard models and a cargo capacity that easily takes a road bike. The question for many shoppers isn't whether to get one. It's how to pay for it.</p>
+        <p class="tldr">The Subaru Outback is the all-wheel-drive wagon that defined its category. All-Wheel Drive is equipped on every trim, with 8.7 inches of ground clearance on the standard models and a cargo capacity that easily takes a road bike. The question for many shoppers isn't whether to get one. It's how to pay for it.</p>
         <p>Leasing and financing fit different drivers, and our desk caters both every day. Here's how they split.</p>
 
         <h3>Leasing an Outback</h3>
@@ -1823,27 +1848,23 @@
     </div>
 
     <!-- Right gutter -->
-    <aside class="gutter" aria-label="Trust signals">
-      <div class="chip">
-        <div class="lbl">Google rating</div>
-        <div class="stars">★★★★★</div>
-        <strong style="font-size:28px;">4.7</strong>
-        <div class="sub">Across 4,448 customer reviews</div>
+    <aside class="gutter" aria-label="Get your Outback">
+      <a class="rail-action" href="https://www.subarudalton.com/searchnew.aspx">
+        <span class="lbl">Browse inventory</span>
+        <strong>Shop the Outback lineup</strong>
+        <span class="sub">Every trim, plus the rest of the Subaru range.</span>
+        <span class="rail-action__cta">View inventory &rarr;</span>
+      </a>
+      <div class="rail-card">
+        <span class="lbl">Visit us</span>
+        <strong>2829 National City Blvd</strong>
+        <span class="sub">National City, CA 91950. On the Mile of Cars.</span>
+        <a class="rail-link" href="https://www.subarudalton.com/contactus.aspx">Contact us &rarr;</a>
       </div>
-      <div class="chip">
-        <div class="lbl">Reach the sales desk</div>
-        <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener"><strong style="font-family:var(--display); font-size:22px;">Dalton Subaru Contact</strong></a>
-        <div class="sub">See today's offers · run lease vs. finance</div>
-      </div>
-      <div class="chip">
-        <div class="lbl">Standard on every trim</div>
-        <strong style="font-size:18px; line-height:1.2;">Symmetrical AWD + EyeSight</strong>
-        <div class="sub">8.7" ground clearance · 9.5" on the Wilderness</div>
-      </div>
-      <div class="chip">
-        <div class="lbl">Fuel economy (non-turbo)</div>
-        <strong style="font-size:22px; line-height:1.2;">26 / 32 / 29</strong>
-        <div class="sub">City / hwy / combined mpg per fueleconomy.gov</div>
+      <div class="rail-card">
+        <span class="lbl">Trust</span>
+        <strong>4.7 &#9733; · 4,448 reviews</strong>
+        <span class="sub">What Outback buyers say about shopping here.</span>
       </div>
     </aside>
   </div>
