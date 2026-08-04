@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no" />
-<title>Subaru Outback Lease Offers | Lease or Finance an Outback at Dalton Subaru National City</title>
-<meta name="description" content="Subaru Outback lease offers near San Diego. Dalton Subaru National City handles new Outback leasing and financing on the Mile of Cars, with honest lease-vs-finance advice for San Diego County drivers." />
+<title>Subaru Outback Lease Offers | Dalton Subaru National City</title>
+<meta name="description" content="Subaru Outback lease and finance offers at Dalton Subaru National City, with straight lease-vs-finance advice for San Diego County drivers." />
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 <link rel="canonical" href="https://www.subarudalton.com/subaru-outback-lease-offers/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Subaru Outback Lease Offers | Lease or Finance an Outback at Dalton Subaru National City" />
-<meta property="og:description" content="See current Subaru Outback lease and finance offers at Dalton Subaru National City, with straight lease-vs-finance advice for San Diego County drivers." />
+<meta property="og:title" content="Subaru Outback Lease Offers | Dalton Subaru National City" />
+<meta property="og:description" content="Subaru Outback lease and finance offers at Dalton Subaru National City, with straight lease-vs-finance advice for San Diego County drivers." />
 <meta property="og:url" content="https://www.subarudalton.com/subaru-outback-lease-offers/" />
 <meta property="og:site_name" content="Dalton Subaru National City" />
-<meta property="og:image" content="subaru-outback-hero.webp" />
+<meta property="og:image" content="https://www.subarudalton.com/subaru-outback-lease-offers/subaru-outback-hero.webp" />
 <meta property="og:image:width" content="2100" />
 <meta property="og:image:height" content="800" />
 <meta property="og:locale" content="en_US" />
@@ -25,9 +25,9 @@
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Subaru Outback Lease Offers | Lease or Finance an Outback at Dalton Subaru National City" />
-<meta name="twitter:description" content="See current Subaru Outback lease and finance offers at Dalton Subaru National City, with straight lease-vs-finance advice for San Diego County drivers." />
-<meta name="twitter:image" content="subaru-outback-hero.webp" />
+<meta name="twitter:title" content="Subaru Outback Lease Offers | Dalton Subaru National City" />
+<meta name="twitter:description" content="Subaru Outback lease and finance offers at Dalton Subaru National City, with straight lease-vs-finance advice for San Diego County drivers." />
+<meta name="twitter:image" content="https://www.subarudalton.com/subaru-outback-lease-offers/subaru-outback-hero.webp" />
 
 <!-- Favicon -->
 <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -59,9 +59,9 @@
       "@id": "https://www.subarudalton.com/subaru-outback-lease-offers/#article",
       "headline": "Subaru Outback Lease Offers",
       "description": "Subaru Outback lease offers near San Diego. Dalton Subaru National City handles new Outback leasing and financing on the Mile of Cars, with honest lease-vs-finance advice for San Diego County drivers.",
-      "image": "subaru-outback-hero.webp",
+      "image": "https://www.subarudalton.com/subaru-outback-lease-offers/subaru-outback-hero.webp",
       "datePublished": "2026-08-01T00:00:00-07:00",
-      "dateModified": "2026-08-01T00:00:00-07:00",
+      "dateModified": "2026-08-04T00:00:00-07:00",
       "author": {
         "@type": "Organization",
         "name": "Dalton Subaru National City Finance Team",
@@ -693,7 +693,7 @@
   }
   .trim {
     padding: 32px 26px 30px;
-    display: flex; flex-direction: column; gap: 10px;
+    display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 10px;
     position: relative;
     border-right: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
@@ -703,12 +703,12 @@
      so the card above-right must keep its rule or the line goes half-width. */
   .trim:last-child { border-bottom: none; }
   .trim:nth-last-child(2):nth-child(odd) { border-bottom: none; }
-  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; white-space: nowrap; }
+  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 0; white-space: nowrap; }
   .trim .engine { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
   .trim.wilderness .engine { color: var(--blue-deep); }
   .trim .badge { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
   .trim.flagship .badge { color: var(--blue); }
-  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 6px 0 12px; min-height: calc(26px * 1.05 * 2); }
+  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 0; }
   .trim .equip { font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin: 0; }
 
   /* ---------- Specs strip ---------- */
@@ -1217,8 +1217,8 @@
     list-style: none; padding: 0; margin: 0;
     font-size: 14px;
   }
-  .sources .ext li { padding: 10px 0; border-top: 1px solid var(--rule); display: flex; gap: 10px; align-items: baseline; }
-  .sources .ext li::before { content: "↗"; color: var(--blue); font-size: 12px; }
+  .sources .ext li { position: relative; padding: 10px 0 10px 22px; border-top: 1px solid var(--rule); }
+  .sources .ext li::before { content: "\2197"; position: absolute; left: 0; top: 10px; color: var(--blue); font-size: 12px; line-height: 1.7; }
 
   /* ---------- Closing CTA ---------- */
   .closing-cta {
@@ -1512,7 +1512,6 @@
          fetchpriority="high"
          width="1200" height="675"
          style="object-position: center 62%;" />
-    <span class="credit">DALTON SUBARU NATIONAL CITY · OUTBACK</span>
     <figcaption class="visually-hidden">A Subaru Outback at Dalton Subaru National City on the National City Mile of Cars, available to lease or finance for San Diego County drivers.</figcaption>
   </figure>
 </header>
@@ -1560,12 +1559,22 @@
         <p>Leasing and financing fit different drivers, and our desk caters both every day. Here's how they split.</p>
 
         <h3>Leasing an Outback</h3>
-        <p><strong>Leasing</strong> keeps your monthly payment lower and rotates you into a new vehicle every two or three years. It fits if you like the newest EyeSight safety tech, you drive predictable miles, and you'd rather not own a vehicle long-term. The catch, and this is the part a lot of buyers gloss over, is the mileage cap. A standard Subaru lease is quoted at 10,000 or 12,000 miles a year. If your commute from Chula Vista or the South Bay runs you past that, the per-mile overage charge at lease-end can erase the monthly savings you signed up for. Just last month our team reviewed a Chula Vista commuter's actual odometer history before quoting a lease, found she was logging closer to 18,000 miles a year, and steered her into finance instead.</p>
+        <p><strong>Leasing</strong> keeps your monthly payment lower and rotates you into a new vehicle every two or three years.</p>
+
+          <ul class="bullets">
+            <li><strong>It fits if:</strong> you like the newest EyeSight safety tech, you drive predictable miles, and you'd rather not own a vehicle long-term.</li>
+            <li><strong>The mileage cap is the catch:</strong> a standard Subaru lease is quoted at 10,000 or 12,000 miles a year.</li>
+            <li><strong>Going over erases the savings:</strong> if your commute from Chula Vista or the South Bay runs past the cap, the per-mile overage charge at lease-end can wipe out what you saved monthly.</li>
+          </ul>
+
+          <p>Just last month our team reviewed a Chula Vista commuter's actual odometer history before quoting a lease. She was logging closer to 18,000 miles a year, so we steered her into finance instead.</p>
 
         <h3>Financing an Outback</h3>
         <p><strong>Financing</strong> is the path to ownership. You build equity, you drive as many miles as you want, and once it's paid off, the payments stop.</p>
 
-        <p>The U.S. Department of Energy's <a href="https://www.fueleconomy.gov" rel="noopener">fueleconomy.gov</a> rates a current non-turbo Outback at 26 city / 32 highway / 29 combined MPG. And because Subaru's horizontally opposed engines are known for going the distance, financing is the smarter math if you tend to keep a vehicle past the loan term. We've had original Subaru finance customers come back to trade Outbacks with well over 150,000 miles on the clock. Those owners often finance again.</p>
+        <p>The U.S. Department of Energy's <a href="https://www.fueleconomy.gov" rel="noopener">fueleconomy.gov</a> rates a current non-turbo Outback at 26 city / 32 highway / 29 combined MPG.</p>
+
+          <p>Subaru's horizontally opposed engines are known for going the distance, so financing is the smarter math if you tend to keep a vehicle past the loan term. We've had original Subaru finance customers come back to trade Outbacks with well over 150,000 miles on the clock. Those owners often finance again.</p>
 
         <p>There's no universally "right" answer. The right one depends on your annual mileage, how long you plan to keep a car, and your monthly budget. We can run both scenarios for you side by side, and we're happy to have either conversation with you.</p>
 
@@ -1588,7 +1597,7 @@
         <div class="section-num"><span>02</span><span>Today's offers</span></div>
         <h2 class="section-h"><em>Live</em> Outback offers.</h2>
         <p class="lede no-cap">Lease and finance offers on the Outback change frequently. They shift with the model year, the inventory on the ground, and Subaru of America's national programs, which reset roughly month to month. Posting a fixed monthly payment here would be wrong by the time you read it, so we don't.</p>
-        <p>For the current Subaru Outback lease offers, the monthly payment, the due-at-signing amount, the term length, and the mileage allowance on the trims in stock, check the live offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or reach the sales team through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
+        <p>For the current Subaru Outback lease offers, the monthly payment, the due-at-signing amount, the term length, and the mileage allowance on the trims in stock. Check the live offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or reach the sales team through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
 
         <h3>Come ready with three things</h3>
         <p>When you reach out, bring these and the quote goes faster:</p>
@@ -1606,7 +1615,7 @@
         <div class="section-num"><span>03</span><span>The lineup</span></div>
         <h2 class="section-h">A quick walk through <em>the Outback lineup</em>.</h2>
 
-        <p class="lede no-cap">Knowing the trims before you walk the lot makes the lease-versus-finance call easier, because residual value, the chunk of a lease payment that's set by what the vehicle is worth at the end of the term, varies across the range. Our team frames it this way for shoppers.</p>
+        <p class="lede no-cap">Knowing the trims before you walk the lot makes the lease-versus-finance call easier. Residual value, the chunk of a lease payment set by what the vehicle is worth at the end of the term, varies across the range. Our team frames it this way for shoppers.</p>
         <figure class="yt-embed" id="video-outback-film">
           <div class="frame">
             <iframe src="https://www.youtube-nocookie.com/embed/vAFfxQhpHG8?rel=0&amp;modestbranding=1"
@@ -1654,7 +1663,7 @@
         <div class="safety-banner" style="grid-template-columns: 1fr;">
           <div class="copy">
             <h4>Strong safety scores feed strong resale.</h4>
-            <p>The Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) has named recent Outback model years a TOP SAFETY PICK+, its highest award, which is part of why the Outback leases as well as it does. Strong safety scores feed strong resale, and strong resale is what keeps a lease payment reasonable.</p>
+            <p>The Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) has named recent Outback model years a TOP SAFETY PICK+, its highest award. That is part of why the Outback leases as well as it does. Strong safety scores feed strong resale, and strong resale is what keeps a lease payment reasonable.</p>
           </div>
         </div>
       </section>
@@ -1744,7 +1753,15 @@
           </article>
         </div>
 
-        <p style="margin-top: 28px;">A <strong>lease payment</strong> is built on three things: the capitalized cost (essentially the negotiated price), the residual value (what Subaru of America projects the Outback will be worth at lease-end), and the money factor (the lease equivalent of an interest rate). You're paying for the depreciation across your term, plus rent charge, not the whole car. That's why the monthly is lower. The Outback's strong residuals, which trace back to its safety scores and Subaru's reliability reputation, are the reason it leases better than a lot of competitors in its segment.</p>
+        <p style="margin-top: 28px;">A <strong>lease payment</strong> is built on three things:</p>
+
+          <ul class="bullets">
+            <li><strong>Capitalized cost:</strong> essentially the negotiated price.</li>
+            <li><strong>Residual value:</strong> what Subaru of America projects the Outback will be worth at lease-end.</li>
+            <li><strong>Money factor:</strong> the lease equivalent of an interest rate.</li>
+          </ul>
+
+          <p>You're paying for the depreciation across your term, plus rent charge, not the whole car. That's why the monthly is lower. The Outback's strong residuals trace back to its safety scores and Subaru's reliability reputation, and they are why it leases better than most competitors in its segment.</p>
 
         <p>A <strong>finance payment</strong> is built on the full price, your down payment, the loan term, and the APR. You're buying the whole vehicle, so the monthly is higher, but every payment buys equity, and you own an asset at the end. For resale and trade-in context, independent valuation sources like Kelley Blue Book (<a href="https://www.kbb.com" rel="noopener">kbb.com</a>) and Edmunds (<a href="https://www.edmunds.com" rel="noopener">edmunds.com</a>) publish Outback residual and resale data you can sanity-check our finance math against. We encourage it, since we want our customers to be as informed as possible.</p>
 
@@ -1757,7 +1774,7 @@
       <aside class="cta-inline" aria-labelledby="cta-inline-heading">
         <div class="eyebrow">Dalton Subaru National City</div>
         <h3 id="cta-inline-heading">See today's Outback lease and finance offers.</h3>
-        <p class="lede no-cap">Tell us your trim, your annual mileage, and your timeline, and we'll run lease and finance side by side, we'll print both quotes so you can compare the total cost, not just the monthly. There's no charge for the comparison.</p>
+        <p class="lede no-cap">Tell us your trim, your annual mileage, and your timeline, and we'll run lease and finance side by side. We'll print both quotes so you can compare the total cost, not just the monthly. There's no charge for the comparison.</p>
         <div class="actions">
           <a class="btn primary" href="https://www.subarudalton.com/">See current Outback offers <span class="arrow">→</span></a>
           <a class="btn ghost" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a>
@@ -1799,7 +1816,7 @@
           <li><strong>Visit the dealership.</strong> Stop by 2829 National City Blvd for a test drive and to finalize numbers with the sales team.</li>
         </ol>
 
-        <p>Sales is open seven days a week, Monday through Saturday from 8:30 AM to 8:00 PM, and Sunday from 10:00 AM to 6:00 PM, so you can sort out a lease or finance deal on your schedule, weekends included. You can reach the dealership through <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
+        <p>Sales is open seven days a week, Monday through Saturday from 8:30 AM to 8:00 PM, and Sunday from 10:00 AM to 6:00 PM. You can sort out a lease or finance deal on your schedule, weekends included. You can reach the dealership through <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> or the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal.</p>
 
         <ul class="bullets">
           <li><strong>Contact:</strong> <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a></li>
@@ -1829,7 +1846,7 @@
       <section class="s" id="why-here">
         <div class="section-num"><span>08</span><span>Why Dalton</span></div>
         <h2 class="section-h">Why lease or finance at <em>Dalton Subaru National City</em>.</h2>
-        <p class="lede no-cap">Where you sign matters as much as what you sign. Dalton Subaru National City is an established Subaru dealership staffed by the same team that served San Diego County drivers under the former Frank Subaru name, now operating as Dalton Subaru as part of the Dalton Corporation.</p>
+        <p class="lede no-cap">Where you sign matters as much as what you sign. Dalton Subaru National City is an established Subaru dealership staffed by the same team that served San Diego County drivers under the former Frank Subaru name. It now operates as Dalton Subaru, part of the Dalton Corporation.</p>
 
 
         <div class="spec-strip stats">
@@ -1839,11 +1856,13 @@
           <div class="item"><div class="num">Love</div><div class="lbl">Subaru Love Promise Community Commitment Award</div></div>
         </div>
 
-        <p>That continuity means the people structuring your Outback lease or finance deal today have been doing it in this market for years. When we say we've watched these cars hold value, that's first-hand, not a brochure line, we've inspected and reconditioned plenty of high-mileage Outback trade-ins that came back to this lot, and we verified their resale strength against the independent guides before quoting a number.</p>
-
-        <p>The dealership sits on the National City Mile of Cars at <strong>2829 National City Blvd, National City, CA 91950</strong>, minutes from Chula Vista and central San Diego, and an easy drive from across San Diego County. It carries a 4.7-star Google rating backed by 4,448 reviews from local owners (pulled live from Google), which is a fair signal to weigh when you're deciding where to commit to a multi-year lease or loan.</p>
-
-        <p>We're also part of Subaru's national Subaru Love Promise community commitment and a recipient of the Subaru Love Promise Community Commitment Award, the program that ties this store to the neighborhoods of National City, Chula Vista, and the wider county it serves.</p>
+        <ul class="bullets">
+          <li><strong>Continuity:</strong> the team structuring your Outback lease or finance deal today has been doing it in this market for years.</li>
+          <li><strong>First-hand resale knowledge:</strong> we've inspected and reconditioned plenty of high-mileage Outback trade-ins that came back to this lot. We verified their resale strength against the independent guides before quoting a number.</li>
+          <li><strong>On the Mile of Cars:</strong> <strong>2829 National City Blvd, National City, CA 91950</strong>, minutes from Chula Vista and central San Diego, and an easy drive from across the county.</li>
+          <li><strong>A public track record:</strong> a 4.7-star Google rating backed by 4,448 reviews from local owners, pulled live from Google, worth weighing before a multi-year lease or loan.</li>
+          <li><strong>Subaru Love Promise:</strong> a recipient of the Community Commitment Award, the program that ties this store to National City, Chula Vista, and the wider county it serves.</li>
+        </ul>
 
         <h3>Serving National City, Chula Vista &amp; San Diego County</h3>
         <p>Dalton Subaru National City is locally rooted and serves drivers throughout National City, Chula Vista, San Diego County, and the surrounding Southwest California area. If you leased or financed with this team before the Dalton rebrand, you'll find the same faces. If you're new to Subaru, you'll get a dealership that treats a lease or loan as the start of a long relationship, not a one-time signature.</p>
@@ -1977,7 +1996,7 @@
           <details>
             <summary>Is the Outback a good vehicle for San Diego driving?</summary>
             <div class="answer">
-              <p>For most local drivers, yes. The Symmetrical All-Wheel Drive and ground clearance handle the occasional run to the mountains or the desert, while the EPA-rated 29 combined MPG (per fueleconomy.gov on the non-turbo trims) keeps the freeway commute affordable.</p>
+              <p>For most local drivers, yes. The Symmetrical All-Wheel Drive and ground clearance handle the occasional run to the mountains or the desert. The EPA-rated 29 combined MPG (per fueleconomy.gov on the non-turbo trims) keeps the freeway commute affordable.</p>
               <p>The Wilderness is the pick if you're regularly off-pavement; the Premium or Limited is the better value if you mostly stay on the 5 and the 805.</p>
             </div>
           </details>
@@ -1992,7 +2011,7 @@
           <details>
             <summary>Where do I get a Subaru Outback lease quote, and what are the sales hours?</summary>
             <div class="answer">
-              <p>Start at subarudalton.com or use the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal, or visit Dalton Subaru National City at 2829 National City Blvd, National City, CA 91950, on the Mile of Cars, minutes from Chula Vista and San Diego.</p>
+              <p>Start at subarudalton.com or use the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal. Or visit Dalton Subaru National City at 2829 National City Blvd, National City, CA 91950, on the Mile of Cars, minutes from Chula Vista and San Diego.</p>
               <p>Sales hours are Monday through Saturday, 8:30 AM to 8:00 PM, and Sunday, 10:00 AM to 6:00 PM.</p>
             </div>
           </details>
@@ -2064,9 +2083,16 @@
           <div style="font-size:12px; color:var(--muted); margin-top:10px; letter-spacing:0.04em;">Dalton Subaru National City · 2829 National City Blvd, National City, CA 91950</div>
         </div>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Subaru Outback specifications described from Subaru's published model information at subaru.com. Fuel-economy figures are EPA estimates from fueleconomy.gov; a current non-turbo Outback is rated 26 mpg city / 32 highway / 29 combined. Safety awards should be verified at iihs.org; California title, registration, and tax handling are administered by the California DMV at dmv.ca.gov. Lease and finance offers, residuals, money factors, incentives, mileage allowances, and pricing change with Subaru of America's national programs and as inventory moves, and should be re-verified before any deal is signed. For a current quote on a specific Outback build, reach Sales through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener"><strong>Dalton Subaru Contact</strong></a> portal.</p>
+        <ul class="bullets" style="font-size:15px; color:var(--ink-soft); max-width:660px;">
+            <li>Subaru Outback specifications described from Subaru's published model information at subaru.com.</li>
+            <li>Fuel-economy figures are EPA estimates from fueleconomy.gov. A current non-turbo Outback is rated 26 mpg city / 32 highway / 29 combined.</li>
+            <li>Safety awards should be verified at iihs.org.</li>
+            <li>California title, registration, and tax handling are administered by the California DMV at dmv.ca.gov.</li>
+            <li>Lease and finance offers, residuals, money factors, incentives, mileage allowances, and pricing change with Subaru of America's national programs and as inventory moves. Re-verify before any deal is signed.</li>
+            <li>For a current quote on a specific Outback build, reach Sales through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener"><strong>Dalton Subaru Contact</strong></a> portal.</li>
+          </ul>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about Subaru Outback lease offers at Dalton Subaru National City is not answered here, reach a sales advisor through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal, or see current Outback offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a>.</em></p>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about Subaru Outback lease offers at Dalton Subaru National City is not answered here, reach a sales advisor through the <a class="tel" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a> portal. You can also see current Outback offers at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a>.</em></p>
 
         <h4 style="margin-top:28px; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Next steps</h4>
         <ul class="ext" style="margin-bottom:28px;">
@@ -2101,7 +2127,7 @@
 <section class="closing-cta">
   <div class="wrap">
     <h2>Ready to drive an <em>Outback</em>?</h2>
-    <p>Your next Subaru Outback is waiting on the Mile of Cars. See current lease and finance offers at subarudalton.com, reach us through the Dalton Subaru Contact portal, or visit Dalton Subaru National City at 2829 National City Blvd. Serving National City, Chula Vista, and all of San Diego County.</p>
+    <p>Your next Subaru Outback is waiting on the Mile of Cars. See current lease and finance offers at subarudalton.com, reach us through the Dalton Subaru Contact portal. Or visit Dalton Subaru National City at 2829 National City Blvd. Serving National City, Chula Vista, and all of San Diego County.</p>
     <div class="actions">
       <a class="btn primary" href="https://www.subarudalton.com/">See current Outback offers <span class="arrow">→</span></a>
       <a class="btn ghost" href="https://www.subarudalton.com/contactus.aspx" rel="noopener">Dalton Subaru Contact</a>
@@ -2114,12 +2140,12 @@
   <div class="wrap">
     <h4>Disclosures</h4>
     <ul>
-      <li><strong>Lease &amp; finance offers.</strong> We do not publish payment, APR, money-factor, residual, or lease figures on this page because those terms change frequently and depend on credit tier, term, trim, down payment, and the manufacturer program running that day. Nothing on this page is an offer, a quote, or a guarantee of approval. All financing and leasing is subject to credit approval. Ask our team for current numbers on your specific situation.</li>
+      <li><strong>Lease &amp; finance offers.</strong> We do not publish payment, APR, money-factor, residual, or lease figures on this page. Those terms change frequently, and they depend on credit tier, term, trim, down payment, and the manufacturer program running that day. Nothing on this page is an offer, a quote, or a guarantee of approval. All financing and leasing is subject to credit approval. Ask our team for current numbers on your specific situation.</li>
       <li><strong>Mileage allowances.</strong> The 10,000- and 12,000-mile-per-year figures describe typical Subaru lease structures, not a fixed term. Excess-mileage and excess-wear charges apply at lease-end per your lease agreement. The 18,000-mile commuter example is illustrative, not a threshold or a rule.</li>
       <li><strong>Inventory &amp; availability.</strong> Outback trims described here (Outback, Premium, Limited, Touring, Wilderness) reflect the lineup at publication and shift as vehicles are sold and delivered. This page is not a guarantee that any specific trim, color, or configuration is currently on the lot. Confirm live availability at <a href="https://www.subarudalton.com/" rel="noopener">subarudalton.com</a> before visiting.</li>
       <li><strong>Specifications.</strong> Ground clearance (8.7 inches standard Outback, 9.5 inches Wilderness) and the 3,500-lb Wilderness towing capacity are approximate and vary by trim, model year, and configuration. Towing capacity depends on proper equipment and correct loading. Confirm exact figures on the specific vehicle's window sticker or at <a href="https://www.subaru.com" rel="noopener">subaru.com</a>.</li>
       <li><strong>Fuel economy.</strong> The 26 city / 32 highway / 29 combined MPG figures are EPA estimates for a current non-turbo Outback per <a href="https://www.fueleconomy.gov" rel="noopener">fueleconomy.gov</a>. Turbocharged and Wilderness trims rate lower. Your actual mileage will vary with driving conditions, load, and maintenance.</li>
-      <li><strong>Safety.</strong> IIHS TOP SAFETY PICK+ recognition applies to specific Subaru Outback model years and build configurations as tested by the Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) and does not carry across all model years. EyeSight Driver Assist Technology is a driver-assist system, not a substitute for attentive driving. Check open recalls for any VIN free at <a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a>.</li>
+      <li><strong>Safety.</strong> IIHS TOP SAFETY PICK+ recognition applies to specific Subaru Outback model years and build configurations as tested by the Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>). It does not carry across all model years. EyeSight Driver Assist Technology is a driver-assist system, not a substitute for attentive driving. Check open recalls for any VIN free at <a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a>.</li>
       <li><strong>Resale &amp; residual value.</strong> Statements about the Outback holding value reflect our own trade-in experience and independent guide data at publication. Residual values are set by the lender on each program and are not a prediction of your vehicle's future market value. For independent research, see <a href="https://www.kbb.com" rel="noopener">kbb.com</a> and <a href="https://www.edmunds.com" rel="noopener">edmunds.com</a>.</li>
       <li><strong>Title &amp; registration.</strong> California title, registration, and tax handling are administered by the California DMV (<a href="https://www.dmv.ca.gov" rel="noopener">dmv.ca.gov</a>). Fees quoted at the desk are estimates until the deal is finalized.</li>
       <li><strong>Rating &amp; reviews.</strong> The 4.7-star Google rating across 4,448 reviews reflects Dalton Subaru National City's Google Business Profile as of publication. Review counts are pulled live and change over time; confirm the current figure on the live Google profile.</li>
